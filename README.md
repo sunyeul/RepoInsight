@@ -11,7 +11,7 @@ To get started with RepoInsight, follow these steps:
 1. **Clone the Repository:** 📥
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/sunyeul/RepoInsight.git
    cd repoinsight
    ```
 
@@ -19,7 +19,7 @@ To get started with RepoInsight, follow these steps:
    Make sure you have Python 3.6 or higher installed. Then, install the required libraries using pip:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirements.lock
    ```
 
 3. **Set Up OpenAI API Key:** 🔑
