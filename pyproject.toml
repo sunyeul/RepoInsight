@@ -1,0 +1,31 @@
+[project]
+name = "repoinsight"
+version = "0.1.0"
+description = "RepoInsight is a Python tool designed to analyze code stored in Git repositories. It automates the process of cloning a repository, extracting its Python code, analyzing the code structure and functionality, and generating a structured README file. By leveraging OpenAI's GPT models, RepoInsight provides comprehensive insights into the codebase, making it easier for developers to understand and document their projects."
+authors = [
+    { name = "sunyeul", email = "res1235@gmail.com" }
+]
+dependencies = [
+    "gitpython>=3.1.43",
+    "openai>=1.41.1",
+    "magika>=0.5.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ipykernel>=6.29.5",
+    "ruff>=0.6.1",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/repoinsight"]
